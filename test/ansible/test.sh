@@ -4,7 +4,9 @@ source test-utils.sh
 
 # Template specific tests
 check "distro" lsb_release -c
-check "greeting" [ $(cat /usr/local/etc/greeting.txt | grep hey) ]
+check "ansible" ansible --version
+check "ansible-lint" ansible-lint --version
+check "yamllint" yamllint --version
 
 # Report result
 reportResults

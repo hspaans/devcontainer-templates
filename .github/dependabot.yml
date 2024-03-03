@@ -1,13 +1,21 @@
 ---
 version: 2
 updates:
+  - package-ecosystem: devcontainers
+    directory: /
+    schedule:
+      interval: monthly
+    groups:
+      devcontainers:
+        patterns:
+          - "*"
+
   - package-ecosystem: github-actions
     directory: /
     schedule:
       interval: monthly
     groups:
-      GitHub-Actions:
+      github-actions:
         patterns:
           - "*"
-    assignees:
-      - "hspaans"
+
