@@ -13,8 +13,7 @@ jobs:
         id: filter
         with:
           filters: |
-            color: ./**/color/**
-            hello: ./**/hello/**
+            ansible: ./**/ansible/**
 
   test:
     needs: [detect-changes]
