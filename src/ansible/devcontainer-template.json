@@ -11,7 +11,7 @@
             "type": "string",
             "description": "Python version (use -bookworm, or -bullseye variants on local arm64/Apple Silicon):",
             "proposals": [
-				"3-bookworm",
+                "3-bookworm",
                 "3.12-bookworm",
                 "3.11-bookworm",
                 "3.10-bookworm",
@@ -30,16 +30,6 @@
                 "3.8-buster"
             ],
             "default": "3.12-bullseye"
-        },
-        "favorite": {
-            "type": "string",
-            "description": "Choose your favorite color.",
-            "proposals": [
-                "red",
-                "gold",
-                "green"
-            ],
-            "default": "red"
         }
     },
     "platforms": [
